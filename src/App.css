@@ -320,51 +320,79 @@ body {
   font-weight: 600;
 }
 
-/* Responsive: mobile layout adjustments */
+/* ================================
+   RESPONSIVE MEDIA QUERY (MOBILE)
+   ================================ */
 @media (max-width: 768px) {
-  /* Center the main header and reduce size */
-  .expense-container h1 {
-    font-size: 28px;
-    margin-left: 0;
-    text-align: center;
-    padding: 10px 0;
+
+  /* Global */
+  body {
+    padding: 0;
+    margin: 0;
   }
 
-  /* Expense details box centered and full-width */
+  /* HEADER */
+  .expense-container h1 {
+    font-size: 32px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  /* EXPENSE DETAILS BOX */
   .expense-details {
     width: 92%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
     padding: 18px;
     box-sizing: border-box;
   }
 
-  /* Make each expense item slightly more compact on mobile */
+  .expense-details h2 {
+    margin-top: 0;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  /* EXPENSE ITEMS */
   .expensedetails-info {
     gap: 12px;
   }
 
-  .expensedetails-info .expense-item {
+  .expense-item {
     padding: 12px 14px;
     gap: 12px;
   }
 
-  /* Ensure columns stack neatly: keep fixed serial width, let name/amount/sector align */
   .item1 {
-    min-width: 34px;
-    text-align: left;
+    font-size: 16px;
+    min-width: 30px;
   }
 
   .items {
     font-size: 16px;
+    word-break: break-word;
   }
 
-  /* Summary cards: one per row, centered */
+  .delete-btn {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+
+  /* ADD EXPENSE BUTTON */
+  .addexpense-btn {
+    margin: 30px auto 0 auto;
+    display: block;
+    width: fit-content;
+    padding: 10px 26px;
+    font-size: 16px;
+  }
+
+  /* SUMMARY CARDS */
   .expense-summary-container {
     grid-template-columns: 1fr;
+    width: 92%;
     gap: 16px;
     margin: 20px auto;
-    width: 92%;
   }
 
   .summary-card {
@@ -379,13 +407,12 @@ body {
     font-size: 22px;
   }
 
-  /* Charts: stack vertically, centered and full width */
+  /* CHARTS */
   .charts-row {
     flex-direction: column;
     gap: 18px;
-    max-width: 92%;
-    margin: 24px auto;
-    padding: 0 6px;
+    width: 92%;
+    margin: 20px auto;
   }
 
   .piechart,
@@ -396,7 +423,6 @@ body {
     box-sizing: border-box;
   }
 
-  /* Make SVGs responsive inside chart containers */
   .piechart svg,
   .barchart svg,
   .line-chart-container svg {
@@ -404,7 +430,32 @@ body {
     height: auto;
   }
 
-  /* Modal / add expense box adjustments */
+  /* LOGIN & SIGNUP */
+  .signup-container,
+  .login-container {
+    width: 92%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .signup-container h1,
+  .login-container h1 {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  .input-box {
+    width: 95%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+
+  /* MODAL */
   .add-expensebox {
     width: 92%;
     padding: 18px;
