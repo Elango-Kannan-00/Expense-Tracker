@@ -321,6 +321,66 @@ body {
 }
 
 /* ================================
+   RESPONSIVE LOGIN & SIGNUP ONLY
+   ================================ */
+@media (max-width: 768px) {
+
+  /* CONTAINERS */
+  .signup-container,
+  .login-container {
+    width: 92%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+  }
+
+  /* HEADINGS (Reduced font size for mobile) */
+  .signup-container h1,
+  .login-container h1 {
+    font-size: 22px;       /* ↓ Reduced size */
+    padding: 8px 0;
+    margin-bottom: 10px;
+  }
+
+  /* INPUTS */
+  .input-box {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px auto;
+  }
+
+  /* ERROR MESSAGE */
+  .error {
+    font-size: 16px;
+  }
+
+  /* BUTTON GROUP */
+  .button-group {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 18px;
+  }
+
+  /* BUTTONS */
+  .btn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  /* SUCCESS / ERROR MESSAGE */
+  .message {
+    font-size: 22px;   /* Also reduced */
+    padding: 10px;
+    margin: 10px auto;
+  }
+}
+
+
+
+/* ================================
    RESPONSIVE MEDIA QUERY (MOBILE)
    ================================ */
 @media (max-width: 768px) {
