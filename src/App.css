@@ -319,3 +319,94 @@ body {
   color: #127b78;
   font-weight: 600;
 }
+
+/* Responsive: mobile layout adjustments */
+@media (max-width: 768px) {
+  /* Center the main header and reduce size */
+  .expense-container h1 {
+    font-size: 28px;
+    margin-left: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Expense details box centered and full-width */
+  .expense-details {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* Make each expense item slightly more compact on mobile */
+  .expensedetails-info {
+    gap: 12px;
+  }
+
+  .expensedetails-info .expense-item {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  /* Ensure columns stack neatly: keep fixed serial width, let name/amount/sector align */
+  .item1 {
+    min-width: 34px;
+    text-align: left;
+  }
+
+  .items {
+    font-size: 16px;
+  }
+
+  /* Summary cards: one per row, centered */
+  .expense-summary-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 20px auto;
+    width: 92%;
+  }
+
+  .summary-card {
+    padding: 18px 12px;
+  }
+
+  .summary-card h3 {
+    font-size: 16px;
+  }
+
+  .summary-card .amount {
+    font-size: 22px;
+  }
+
+  /* Charts: stack vertically, centered and full width */
+  .charts-row {
+    flex-direction: column;
+    gap: 18px;
+    max-width: 92%;
+    margin: 24px auto;
+    padding: 0 6px;
+  }
+
+  .piechart,
+  .barchart,
+  .line-chart-container {
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* Make SVGs responsive inside chart containers */
+  .piechart svg,
+  .barchart svg,
+  .line-chart-container svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Modal / add expense box adjustments */
+  .add-expensebox {
+    width: 92%;
+    padding: 18px;
+  }
+}
