@@ -70,8 +70,8 @@ The default connection settings are:
 
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/expense_tracker
-spring.datasource.username=postgres
-spring.datasource.password=postgres
+spring.datasource.username=your_username
+spring.datasource.password=your_password
 ```
 
 You can override the defaults with the `DB_URL`, `DB_USERNAME`, and `DB_PASSWORD` environment variables. Hibernate creates or updates the database tables at startup.
